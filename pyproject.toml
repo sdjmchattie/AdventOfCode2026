@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "AdventOfCode2026"
+version = "0.1.0"
+description = "Solutions to Advent of Code 2026"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.4",
+]
+
+[project.scripts]
+solve = "main:solve"
